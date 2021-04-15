@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : pigpioLED.cpp
+// Name        : lab.cpp
 // Author      : CA ABID
 // Version     :
 // Copyright   : 2021
