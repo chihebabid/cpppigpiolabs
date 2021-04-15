@@ -7,10 +7,10 @@ This repository contains labs developed with C++ and are based on the pigpio lib
 Programs are tested on a Raspberry Pi 3 Model B+, and using the latest distribution Rasperry OS 5.4.
 
 ## Description
-At the moment, there are five labs.
 
 * **Lab 01:** A simple program to read the state of a pushbutton. When pressed, the state a LED is inversed.
 * **Lab 02:** Here, instead of reading the state of the pushbutton by polling, we use a callback function that is called every time the pushbutton state is modified.
 * **Lab 03:** Reading the temperature from MCP9808 snesor connected via i2c bus
 * **Lab 04:** Reading the temperature and the humidity from a DHT11 sensor. The communication with DHT11 is ensured through the class CDht11 which can be integrated to any other project. Reading is performed by polling.   
-* **Lab 05:** As the Lab 04, we perform the the reading of temperature and humidity from DHT11. However, we use a callback function instead of polling. It uses less CPU usage, however using it for several sensors simultaneously may be confusing.
+* **Lab 05:** As the Lab 04, we perform the the reading of temperature and humidity from a DHT11. However, reading is performed the a callback function instead of polling. Thus, it uses less CPU usage, but it can not well suitable for several sensors simultaneously as it can produce conflicts.
+* **Lab 06:** Sending a message from a RPI3 to an Artduino through SPI
